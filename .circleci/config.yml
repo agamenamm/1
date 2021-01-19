@@ -8,13 +8,7 @@ jobs:
           command: sudo apt-get update; \
           name: test
       - run:
-          command: sudo apt-get install -y \ 
-                           libcurl4-openssl-dev \
-                           libssl-dev \
-                           libjansson-dev \
-                           automake \
-                           autotool-dec \
-                           build-essential
+          command: sudo sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential 
           name: test
 workflows:
   main:
