@@ -2,8 +2,12 @@ version: 2.1
 jobs:
   build:
     machine:
+      resource_class: gpu.nvidia.medium
+                   2xlage+
       image: ubuntu-1604-cuda-11.1:202012-01
     steps:
+      - run: nvidia-smi
+      - run: docker run --gpus all nvidia/cuda:11.1-base nvidia-smi
       - run:
           command: sudo apt-get update; \
           name: test
@@ -14,4 +18,3 @@ workflows:
   main:
     jobs:
       - build
-                         
