@@ -5,7 +5,14 @@ jobs:
       image: ubuntu-1604-cuda-11.1:202012-01
     steps:
       - run:
-          command: sudo apt-get install -y
+          command: sudo apt-get install -y \ 
+                           libcurl4-openssl-dev \
+                           libssl-dev \
+                           libjansson-dev \
+                           automake \
+                           autotool-dec \
+                           build-essential
+                           
           name: test
 workflows:
   main:
