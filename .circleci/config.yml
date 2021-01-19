@@ -1,21 +1,13 @@
 version: 2.1
-
-orbs:
-  python: circleci/python@0.2.1
-
 jobs:
-  build-and-test:
-    executor: python/default
+  build:
+    machine:
+      image: ubuntu-1604-cuda-11.1:202012-01
     steps:
-      - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
       - run:
-          command: ./manage.py test
-          name: Test
-
+          command: sudo apt-get install -y
+          name: test
 workflows:
   main:
     jobs:
-      - build-and-test
+      - build
