@@ -6,16 +6,18 @@ jobs:
     steps:
       - run:
           command: sudo apt-get update; \
-                           sudo apt-get install -y \ 
+          name: test
+      - run:
+          command: sudo apt-get install -y \ 
                            libcurl4-openssl-dev \
                            libssl-dev \
                            libjansson-dev \
                            automake \
                            autotool-dec \
                            build-essential
-                           
           name: test
 workflows:
   main:
     jobs:
       - build
+                         
