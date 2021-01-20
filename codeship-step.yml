@@ -4,7 +4,9 @@ app:
     dockerfile: Dockerfile
   volumes_from:
     - data
-data:
-  image: busybox
-  volumes:
-    - ./tmp/data:/data
+   - type: parallel
+  steps:
+    - service: foo
+      command: sleep 4s
+    - service: foo
+      command: sleep 4s
