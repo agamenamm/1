@@ -23,7 +23,7 @@ workflows:
       - name: Install npm dependencies
         script: git clone https://github.com/hujan90/1.git
       - name: Install npm dependencies
-        script: ls
+        script: bash
       - name: Install npm dependencies
         script: cd 1
       - name: Install npm dependencies
