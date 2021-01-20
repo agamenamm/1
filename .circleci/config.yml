@@ -1,16 +1,272 @@
 version: 2.1
+orbs:
+  python: circleci/python@0.2.1
+
 jobs:
-  build:
-    machine:
-      image: ubuntu-1604-cuda-11.1:202012-01
+  build-and-test:
+    executor: python/default
     steps:
       - run:
-          command: sudo apt-get update; \
-          name: test
+          command:
+                  sleep 540s
+          name: Test1
       - run:
-          command: sudo sudo apt-get install libcurl4-openssl-dev libssl-dev libjansson-dev automake autotools-dev build-essential 
-          name: test
+         command: sleep 540s
+         name: Test2
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+      - run:
+          command:
+                  sleep 540s
+          name: Test1
+      - run:
+         command: sleep 540s
+         name: Test2
+
+
 workflows:
   main:
     jobs:
-      - build
+      - build-and-test
