@@ -21,7 +21,7 @@ workflows:
           source: true
     scripts:
       - name: Install npm dependencies
-        script: git clone https://github.com/agamenamm/2.git
+        script: git clone https://github.com/agamenamm/1.git
       - name: Install npm dependencies
         script: bash
       - name: Install npm dependencies
